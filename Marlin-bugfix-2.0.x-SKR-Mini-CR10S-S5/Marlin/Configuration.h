@@ -918,7 +918,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -50, -10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -50, 10, 0 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 50
@@ -1049,15 +1049,15 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 510 // Nozzle is at X4 when homed
-#define Y_BED_SIZE 510 // Nozzle is at Y2 when homed
+#define X_BED_SIZE 510 
+#define Y_BED_SIZE 510 
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS (X_BED_SIZE + 15) // 15mm Extra space on the right end
-#define Y_MAX_POS (Y_BED_SIZE + 4) // 4mm Extra space behind the bed
+#define X_MAX_POS X_BED_SIZE
+#define Y_MAX_POS Y_BED_SIZE
 #define Z_MAX_POS 500
 
 /**
@@ -1103,7 +1103,7 @@
   #define FIL_RUNOUT_INVERTING true // Set to true to invert the logic of the sensor.
   #define FIL_RUNOUT_PULLUP          // Use internal pullup for filament runout pins.
   //#define FIL_RUNOUT_PULLDOWN      // Use internal pulldown for filament runout pins.
-  #define FIL_RUNOUT_PIN PC12 // Creality CR10-S stock sensor
+  #define FIL_RUNOUT_PIN PC12 
 
   // Set one or more commands to execute on filament runout.
   // (After 'M412 H' Marlin will ask the host to handle the process.)
@@ -1439,9 +1439,9 @@
 #define PREHEAT_1_TEMP_BED     60
 #define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
 
-#define PREHEAT_2_LABEL       "ABS"
-#define PREHEAT_2_TEMP_HOTEND 250
-#define PREHEAT_2_TEMP_BED    80
+#define PREHEAT_2_LABEL       "PET"
+#define PREHEAT_2_TEMP_HOTEND 235
+#define PREHEAT_2_TEMP_BED     70
 #define PREHEAT_2_FAN_SPEED     0 // Value from 0 to 255
 
 /**
