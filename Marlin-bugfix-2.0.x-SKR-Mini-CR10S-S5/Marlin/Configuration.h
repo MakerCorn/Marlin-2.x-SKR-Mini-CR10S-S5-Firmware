@@ -918,7 +918,7 @@
  *
  * Specify a Probe position as { X, Y, Z }
  */
-#define NOZZLE_TO_PROBE_OFFSET { -50, -10, 0 }
+#define NOZZLE_TO_PROBE_OFFSET { -50, 10, 0 }
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 50
@@ -941,7 +941,7 @@
  * A total of 2 does fast/slow probes with a weighted average.
  * A total of 3 or more adds more slow probes, taking the average.
  */
-//#define MULTIPLE_PROBING 2
+#define MULTIPLE_PROBING 2
 //#define EXTRA_PROBING    1
 
 /**
